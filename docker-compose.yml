@@ -1,0 +1,13 @@
+version: '2' # specify docker-compose version
+
+# Define the services/containers to be run
+services:
+  webapi:
+    build: api
+    ports:
+      - "80:80"
+    
+  angular: # name of the first service
+    build: web # specify the directory of the Dockerfile
+    ports:
+      - "4200:4200" # specify port forewarding
