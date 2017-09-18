@@ -3,3 +3,4 @@ web/dist/**
 api/bin/**
 api/obj/**
 .vscode/**
+api/.vscode/**
