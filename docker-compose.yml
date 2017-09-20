@@ -1,4 +1,4 @@
-version: '2' # specify docker-compose version
+version: '3' # specify docker-compose version
 
 # Define the services/containers to be run
 services:
@@ -11,3 +11,7 @@ services:
     build: web # specify the directory of the Dockerfile
     ports:
       - "4200:4200" # specify port forewarding
+    volumes:
+      - ./web:/usr/src/app
+    depends_on:
+      - webapi
